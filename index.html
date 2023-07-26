@@ -37,7 +37,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="md:container md:mx-auto">
+    <header class="lg:container lg:mx-auto">
         <nav>
             <div class="navbar lg:flex-row flex-col  bg-[#F85559] justify-between rounded-[600px] mt-12 py-9 px-12">
                 <div>
@@ -66,7 +66,7 @@
         <div class="carousel w-full mt-14 relative">
             <!-- first slide -->
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="/images/banner1.png" class="rounded-lg w-full h-full" />
+              <img src="./images/banner1.png" class="rounded-lg w-full h-full" />
               <div class="absolute top-0 bottom-0 w-full bg-black bg-opacity-40">
                 <h3 class="text-xl lg:text-7xl font-extrabold text-white text-center pt-4 lg:pt-28">Exotic tastes at your 
                     <br>doorstep</h3>
@@ -80,7 +80,7 @@
             </div> 
             <!-- second slide -->
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="/images/banner2.png" class="w-full" />
+              <img src="./images/banner2.png" class="w-full h-full" />
               <div class="absolute top-0 bottom-0 w-full  bg-black bg-opacity-40">
                 <h3 class="text-xl lg:text-7xl font-extrabold text-white text-center pt-4 lg:pt-28">Exotic tastes at your 
                     <br>doorstep</h3>
@@ -94,7 +94,7 @@
             </div> 
             <!-- third slide -->
             <div id="slide3" class="carousel-item relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
+              <img src="./images/banner3.png" class="w-full h-full" />
               <div class="absolute top-0 bottom-0 w-full  bg-black bg-opacity-40">
                 <h3 class="text-xl lg:text-7xl font-extrabold text-white text-center pt-4 lg:pt-28">Exotic tastes at your 
                     <br>doorstep</h3>
@@ -108,7 +108,7 @@
             </div> 
             <!-- fourth slide -->
             <div id="slide4" class="carousel-item relative w-full">
-              <img src="/images/banner4.png" class="w-full" />
+              <img src="./images/banner4.png" class="w-full h-full" />
               <div class="absolute top-0 bottom-0 w-full  bg-black bg-opacity-40">
                 <h3 class="text-xl lg:text-7xl font-extrabold text-white text-center pt-4 lg:pt-28">Exotic tastes at your 
                     <br>doorstep</h3>
@@ -121,7 +121,7 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col lg:flex-row relative w-9/12 lg:-top-20 shadow-lg shadow-indigo-500/40  rounded-lg bg-white p-12 m-auto shadow-slate-800 text-center items-center justify-between ">
+          <div class="flex flex-col lg:flex-row relative w-9/12 lg:-top-20 shadow-lg  rounded-lg bg-white p-12 m-auto shadow-slate-800 text-center justify-between ">
             <div class="">
               <img src="images/fruit1.png" alt="">
               <h4>Grape</h4>
@@ -145,7 +145,43 @@
           </div>
     </header>
     <main>
-
+        <!-- Deal of the day section -->
+        <section class="lg:container lg:mx-auto">
+          <div class="flex justify-between lg:flex-row flex-col">
+            <div class="space-y-8">
+              <h3 class="font-extrabold text-5xl text-[#121212]">Deal of the Day</h3>
+              <p class="font-medium text-base text-[#12121299] w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <!-- countdown -->
+            <div class="flex gap-6 justify-center items-center
+            ">
+              <div>
+                <span class="countdown text-5xl font-extrabold pb-2">
+                  <span style="--value:15;"></span>
+                </span><span class="text-5xl px-10">:</span><br>
+                <span class="font-medium text-base text-[#12121299]">Days</span>
+              </div> 
+              <div>
+                <span class="countdown text-5xl font-extrabold pb-2">
+                  <span style="--value:10;"></span>
+                </span><span class="text-5xl px-10">:</span><br>
+                <span class="font-medium text-base text-[#12121299]">Hours</span>
+              </div> 
+              <div>
+                <span class="countdown text-5xl font-extrabold pb-2">
+                  <span style="--value:24;"></span>
+                </span> <span class="text-5xl px-10">:</span><br>
+                <span class="font-medium text-base text-[#12121299]">Minutes</span>
+              </div> 
+              <div>
+                <span class="countdown text-5xl font-extrabold pb-2">
+                  <span style="--value:13;"></span>
+                </span><br>
+                <span class="font-medium text-base text-[#12121299]">Seconds</span>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
 
     <Footer>
