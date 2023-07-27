@@ -39,40 +39,59 @@
 <body class="font-lato">
   <header class="lg:container lg:mx-auto">
     <nav>
-      <div class="navbar lg:flex-row flex-col  bg-[#F85559] justify-between rounded-[600px] mt-12 py-9 px-12">
-        <div>
-          <ul class="flex flex-col lg:flex-row text-white text-[18px] font-medium gap-[30px]">
+      <div class="navbar lg:flex-row flex-col  lg:bg-[#F85559] justify-between rounded-[600px] mt-12 py-9 px-12">
+        <div class="flex">
+          <ul class="flex flex-col lg:flex-row text-black lg:text-white text-[18px] font-medium gap-[30px] lg:show">
             <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Shop</a></li>
             <li><a href="">All Fruits</a></li>
           </ul>
         </div>
-        <div class="flex items-center">
-          <div>
-            <img src="images/logo.png" alt="">
+        <div class="flex justify-between lg:m-auto">
+          <div class="dropdown lg:hidden inline mr-auto ml-0">
+            <label tabindex="0" class="btn btn-ghost btn-circle lg:none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:none" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </label>
+            <ul tabindex="0"
+              class="flex flex-col lg:flex-row text-black lg:text-white text-[18px] font-medium gap-[30px] menu menu-sm dropdown-content lg:flex-row">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">All Fruits</a></li>
+            </ul>
           </div>
-          <div>
-            <h3 class="font-bold text-white text-4xl">Fruit Burst</h3>
+          <div class="flex items-center ml-auto mr-0">
+            <div>
+              <img src="images/logo.png" alt="">
+            </div>
+            <div>
+              <h3 class="font-bold text-black lg:text-white text-2xl  lg:text-4xl">Fruit Burst</h3>
+            </div>
           </div>
         </div>
         <div>
-          <input type="text" placeholder="Type here" class="input w-[200px] lg:w-[400px] rounded-[50px] " />
+          <input type="text" placeholder="Type here" class="input lg:w-[200px] lg:w-[400px] lg:rounded-[50px]" />
           <i class="fa-solid fa-magnifying-glass relative -left-10"></i>
         </div>
       </div>
     </nav>
     <!-- Banner section -->
-    <div class="carousel w-full mt-14 relative">
+    <div class="carousel lg:w-auto w-auto rounded-xl mt-14 relative">
       <!-- first slide -->
       <div id="slide1" class="carousel-item relative w-full">
-        <img src="./images/banner1.png" class="rounded-lg w-full h-full" />
+        <img src="./images/banner1.png" class="rounded-lg w-auto h-full" />
         <div class="absolute top-0 bottom-0 w-full bg-black bg-opacity-40">
           <h3 class="text-xl lg:text-7xl font-extrabold text-white text-center pt-4 lg:pt-28">Exotic tastes at your
             <br>doorstep
           </h3>
           <p class="font-normal text-white text-xs lg:text-xl text-center">We supply highly quality organic products</p>
-          <button class="flex btn m-auto text-white border-0 bg-[#F85559] p-25 mt-7 ">Shop Now</button>
+          <button
+            class="flex btn w-[120px] h-[22px] lg:w-auto lg:h-auto m-auto text-white border-0 bg-[#F85559] p-25 mt-7 ">Shop
+            Now</button>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide4" class="btn btn-circle">❮</a>
@@ -126,8 +145,8 @@
       </div>
     </div>
     <div
-      class="flex flex-col lg:flex-row relative w-9/12 lg:-top-20 shadow-lg  rounded-lg bg-white p-12 m-auto shadow-slate-800 text-center justify-between ">
-      <div class="">
+      class="flex flex-col lg:flex-row relative w-9/12 lg:-top-20 shadow-lg  rounded-lg bg-white p-12 m-auto shadow-slate-800 text-center justify-between">
+      <div class="lg:mt-auto">
         <img src="images/fruit1.png" alt="">
         <h4>Grape</h4>
       </div>
@@ -466,14 +485,16 @@
           Latin literature from 45 BC, making it over 2000 years old.
         </p>
       </div>
-      <!-- extra info section -->
-      <div class="mt-10 flex justify-between">
+      <!-- extra info -->
+      <div class="mt-10 flex justify-between flex-col lg:flex-row">
         <div class="mt-auto">
-          <div class="flex items-center gap-5 mt-6">
-            <div class=" bg-slate-400 rounded-full w-16 h-16  text-center relative"><i class="fa-solid fa-people-group fa-2xl absolute top-7 left-3"></i></div>
+          <div class="flex items-center flex-col lg:flex-row text-center lg:text-left w-full gap-5 mt-6">
+            <div class=" bg-slate-400 rounded-full w-16 h-16  text-center relative">
+              <i
+                class="fa-solid fa-people-group fa-2xl absolute top-7 left-3"></i></div>
             <div>
               <h3 class="text-2xl font-extrabold mb-3">Dedicated Team</h3>
-              <hr class="text-black w-1/2 mb-3">
+              <hr class="text-black w-1/2 mb-3 m-auto lg:ml-0">
               <p class="text-base text-[#12121299] font-medium">Professional employees are there for you to pick
                 <br>the most amazing and fresh fruits.
               </p>
@@ -533,7 +554,8 @@
                   <br>the most amazing and fresh fruits.
                 </p>
               </div>
-              <div class="bg-slate-400 rounded-full w-16 h-16  text-center relative"><i class="fa-solid fa-ice-cream fa-2xl relative top-4"></i></div>
+              <div class="bg-slate-400 rounded-full w-16 h-16  text-center relative"><i
+                  class="fa-solid fa-ice-cream fa-2xl relative top-4"></i></div>
             </div>
             <div class="flex items-center gap-5 mt-6">
               <div class="text-end">
@@ -544,20 +566,42 @@
                   <br>the most amazing and fresh fruits.
                 </p>
               </div>
-              <div class="bg-slate-400 rounded-full w-16 h-16  text-center relative"><i class="fa-solid fa-thumbs-up fa-2xl relative top-4"></i></div>
+              <div class="bg-slate-400 rounded-full w-16 h-16  text-center relative"><i
+                  class="fa-solid fa-thumbs-up fa-2xl relative top-4"></i></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="w-full bg-black">
-
-    </footer>
   </main>
+  <!-- footer -->
+  <footer class="w-full bg-black">
+    <div class="flex justify-center items-center gap-2 pt-36">
+      <div>
+        <img src="images/logo.png" alt="">
+      </div>
+      <div>
+        <h3 class="font-bold text-white text-4xl">Fruit Burst</h3>
+      </div>
+    </div>
+    <ul class="flex flex-row flex-wrap lg:flex-row text-white gap-14 justify-center text-center mt-12">
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Shop</a></li>
+      <li><a href="">All fruits</a></li>
+      <li><a href="">Support</a></li>
+      <li><a href="">My Account</a></li>
+    </ul>
+    <ul class="flex flex-row lg:flex-row lg:gap-14 justify-around px-4 lg:justify-center text-center pt-12 pb-36 items-center">
+      <li><a href=""><img src="images/twitter 1.png" alt=""></a></li>
+      <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+      <li><a href=""><img src="images/Group 49.png" alt=""></a></li>
+      <li><a href=""><img src="images/linkedin 1.png" alt=""></a></li>
+      <li><a href=""><img src="images/instagram 1.png" alt=""></a></li>
+      <li><a href=""><img src="images/apple 1.png" alt=""></a></li>
+    </ul>
+  </footer>
 
-  <Footer>
-
-  </Footer>
 </body>
 
 </html>
